@@ -1,5 +1,6 @@
 {
   "name": "nft",
+  "homepage": "https://github.com/manny2384/FrontEndMentorGitHub/tree/NFT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
