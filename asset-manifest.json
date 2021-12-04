@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/css/main.ea1455b2.chunk.css",
+    "main.js": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/main.208106aa.chunk.js",
+    "main.js.map": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/main.208106aa.chunk.js.map",
+    "runtime-main.js": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/runtime-main.a0cb85ed.js",
+    "runtime-main.js.map": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/runtime-main.a0cb85ed.js.map",
+    "static/js/2.1bfea96c.chunk.js": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/2.1bfea96c.chunk.js",
+    "static/js/2.1bfea96c.chunk.js.map": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/2.1bfea96c.chunk.js.map",
+    "static/js/3.84ab0a31.chunk.js": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/3.84ab0a31.chunk.js",
+    "static/js/3.84ab0a31.chunk.js.map": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/3.84ab0a31.chunk.js.map",
+    "index.html": "/manny2384/FrontEndMentorGitHub/tree/NFT/index.html",
+    "static/css/main.ea1455b2.chunk.css.map": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/css/main.ea1455b2.chunk.css.map",
+    "static/js/2.1bfea96c.chunk.js.LICENSE.txt": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/js/2.1bfea96c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/manny2384/FrontEndMentorGitHub/tree/NFT/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0cb85ed.js",
+    "static/js/2.1bfea96c.chunk.js",
+    "static/css/main.ea1455b2.chunk.css",
+    "static/js/main.208106aa.chunk.js"
+  ]
+}
