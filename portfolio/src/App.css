@@ -1,0 +1,539 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, .App{
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(13, 12, 12);
+  overflow: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    /*    General elements styling    */
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color:rgb(196, 161, 116)
+}
+a:active,
+a:hover{
+  transform: scale(1.2);
+  color: white;
+}
+.sideBar_menu a:active, .sideBar_menu a:hover{
+  background-color: white;
+}
+.current{
+  background-color: white;
+}
+
+line{
+  stroke: rgb(196, 161, 116);
+}
+
+.Home, .About, .Contact, .Projects{
+  height: calc(100% - 53px);
+  background-color: rgb(13, 12, 12);
+  padding-top: 53px;
+
+}
+
+textarea{
+  outline: none;
+  overflow: auto;
+  resize: none;
+}
+
+                  /*    Mobile styling      */
+body{
+  overflow: auto;
+}
+
+.App{
+  position: relative;
+}
+
+.mobile_icon{
+  display: grid;
+  justify-items: right;
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+  position: fixed;
+  width: calc(100% - 20px);
+  top: 0px;
+  z-index: 1;
+}
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 6px;
+  background-color: rgb(196, 161, 116);
+  margin: 0 0 5px 0;
+  transition: 0.5s;
+}
+.change_bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change_bar2 {opacity: 0;}
+
+.change_bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu_outer{
+  top: 53px;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 53px);
+  background-color: black;
+  color: rgb(196, 161, 116);
+  z-index: 1;
+}
+.menu_inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.sideBar_menu{
+
+  display: none;
+}
+
+    /*    HOME STYLING    */
+.Home{
+
+  color: white;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  position: relative;
+
+
+}
+
+.myname{
+  font-size: 4em;
+  padding: 10px;
+  position: relative;
+}
+
+.mynameWall{
+  position: absolute;
+  width: 100%;
+  background-color: rgb(13, 12, 12);
+  animation: moveWall 6s 1;
+  bottom: 0;
+}
+@keyframes moveWall {
+  from{
+    height: 100%;
+  }
+  to{
+    height: 0%;
+  }
+}
+
+.me{
+  bottom: 100px;
+  width: 100%;
+}
+#me{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: showMe 6s 1;
+}
+@keyframes showMe {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.nav_arrow{
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+.nav_arrow a{
+  display: grid;
+  justify-content: center;
+  width: 50px;
+}
+.nav_arrow a img{
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: navArrowJump 4s infinite;
+
+}
+@keyframes navArrowJump{
+  0%{
+    top: 0;
+  }
+  20%, 100%{
+    top: 50%;
+  }
+}
+
+    /*    ABOUT STYLING    */
+
+.About{
+  position: relative;
+  color: white;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+.information{
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 5px;
+}
+.languages{
+  width: 90%;
+  position: relative;
+  margin: 100px 5%;
+  
+}
+.languages div{
+  position: absolute;
+  height: 20px;
+  width: 80px;
+  opacity: 0;
+  color: rgb(7, 104, 7);
+}
+.cplusplus{
+  animation: moveLanguage 5s infinite;
+  animation-delay: 1s;
+}
+.javascript{
+  animation: moveLanguage 5s infinite;
+  animation-delay: 2s;
+}
+.sql{
+  animation: moveLanguage 5s infinite;
+  animation-delay: 3s;
+}
+.node{
+  animation: moveLanguage 5s infinite;
+  animation-delay: 4s;
+}
+.react{
+  animation: moveLanguage 5s infinite;
+  animation-delay: 5s;
+}
+@keyframes moveLanguage{
+  0%{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  25%{
+    opacity: 0.3;
+    font-size: 0.8rem;
+  }
+  50%{
+    top: 0;
+    left: calc(100% - 80px);
+    opacity: 0.5;
+    font-size: 1rem;
+  }
+  75%{
+    top: 30%;
+    left: calc(100% - 80px)/2;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  85%{
+    top: 15%;
+  }
+  100%{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+}
+
+.interests{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+    /*    PROJECTS STYLING    */
+
+    /*    CONTACT STYLING    */
+
+.Contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 80%;
+  margin: auto;
+}
+.Contact form input{
+  height: 30px;
+  outline: none;
+  border-width: 0 0 1px 0;
+  border-color: rgb(196, 161, 116);
+  background-color: inherit;
+  color: white;
+}
+.Contact form textarea{
+  height: 60px;
+  padding: 2.5px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.Contact #submitbtn{
+  border-width: 1px;
+  background-color: rgb(196, 161, 116);
+  max-width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+.socialMedia{
+  padding: 5px 30% 20px;
+  background-color: rgb(196, 161, 116);
+  display: flex;
+  justify-content: space-around;
+}
+
+
+                    /*    Tablet Styling    */
+@media only screen and (min-width: 688px){
+  /*      General     */
+  .Home, .About, .Projects, .Contact{
+    height: 100%;
+    width: calc(100% - 100px);
+    margin: 0 0 0 100px;
+    padding: 0;
+  }
+
+  .Home{
+    position: relative;
+    height: calc(100% - 100px);
+  }
+  /*    MENU STYLING    */
+  .mobile_icon{
+    display: none;
+  }
+
+  .menu_outer{
+    top: 0;
+    display: grid;
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  .menu_inner{
+    display: block;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+  }
+  .menu_inner a{
+    padding: 20px;
+    position: relative;
+    top: 25px;
+  }
+
+  .sideBar_menu{
+    display: grid;
+    background-color: rgb(13, 12, 12);
+    position: fixed;
+    color:rgb(196, 161, 116);
+    height: calc(100% - 100px);
+    flex-direction: column;
+    width: 50px;
+    padding: 0 25px;
+  }
+  .sideBar_menu a{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(196, 161, 116);
+    position: absolute;
+    left: 25px;
+  }
+  .sideBar_menu .one{
+    top: 10%;
+  }
+  .sideBar_menu .two{
+    top: 20%;
+  }
+  .sideBar_menu .three{
+    top: 30%;
+  }
+  .sideBar_menu .four{
+    top: 40%;
+  }
+
+    /*    HOME STYLING    */
+
+  #me{
+    width: 300px;
+    height: 300px;
+  }
+
+    /*    ABOUT STYLING    */
+
+    .languages{
+      width: 40%;
+      height: 400px;
+      position: absolute;
+      margin: 100px 30%;
+    }
+
+    .information, .interests{
+      font-size: 3rem;
+    }
+
+    /*    PROJECTS STYLING    */
+
+    /*    CONTACT STYLING    */
+
+
+  .Contact form{
+    width: 60%;
+  }
+
+}
+
+
+                  /*    Desktop styling   */
+
+@media only screen and (min-width: 993px){
+  /*    MENU STYLING    */
+  .menu_inner{
+    width: 50%;
+  }
+
+    /*    HOME STYLING    */
+
+  .myname{
+    font-size: 10rem;
+    text-align: left;
+  }
+
+    /*    ABOUT STYLING    */
+  .languages{
+    width: 35%;
+    height: 500px;
+    margin: 100px 32.5%;
+    font-size: 3rem;
+  }
+    /*    PROJECTS STYLING    */
+
+    /*    CONTACT STYLING    */
+  
+  .Contact form{
+    width: 40%;
+  }
+
+  .socialMedia{
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+}
+
+@media only screen and (min-width: 1313px){
+  /*    MENU STYLING    */
+
+  .menu_inner{
+    width: 40%;
+  }
+
+    /*    HOME STYLING    */
+
+    /*    ABOUT STYLING    */
+    .languages{
+
+    }
+    /*    PROJECTS STYLING    */
+
+    /*    CONTACT STYLING    */
+
+  .Contact form{
+    width: 30%;
+  }
+}
+
+
+@media only screen and (max-height: 700px){
+  .Home, .Projects, .About, .Contact{
+    height: 1000px;
+    
+  }
+
+  .languages{
+    margin-top: 0;
+  }
+}
