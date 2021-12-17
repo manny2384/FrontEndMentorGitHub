@@ -8,7 +8,7 @@ function Contact (){
     return(<>
         <div id="contact" className="Contact">
 
-            <form class='gform' action='https://script.google.com/macros/s/AKfycbzLkPAJblQlzIUNCODCCsihh0BbH0WGdXoA6Rpy/exec' method='POST'>
+            <form className='gform' action='https://script.google.com/macros/s/AKfycbzLkPAJblQlzIUNCODCCsihh0BbH0WGdXoA6Rpy/exec' method='POST'>
 
                 <input type="text" name="name" placeholder="First Name..."></input>
                 <input type="text" name="color" placeholder="Last Name..."></input>
